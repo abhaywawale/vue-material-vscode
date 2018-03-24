@@ -1,0 +1,264 @@
+{
+  // ## COMPONENTS
+  // ### APP
+  // ### AVATAR
+  "md-avatar component": {
+    "prefix": "mdAvatar",
+    "body": ["<md-avatar>", "  <img src=\"${1:src}\" alt=\"${2:alt}\">", "</md-avatar>$0"],
+    "description": "md-avatar component - Vue Material"
+  },
+  "md-avatar with icon": {
+    "prefix": "mdAvatarIcon",
+    "body": ["<md-avatar class=\"md-avatar-icon\">", "  <md-icon>${1:icon}</md-icon>", "</md-avatar>$0"],
+    "description": "md-avatar with icon - Vue Material"
+  },
+  "md-avatar with icon in small size": {
+    "prefix": "mdAvatarIconSmall",
+    "body": ["<md-avatar class=\"md-avatar-icon md-small\">", "  <md-icon>${1:icon}</md-icon>", "</md-avatar>$0"],
+    "description": "md-avatar with icon in small size - Vue Material"
+  },
+  "md-avatar with icon in large size": {
+    "prefix": "mdAvatarIconLarge",
+    "body": ["<md-avatar class=\"md-avatar-icon md-large\">", "  <md-icon>${1:icon}</md-icon>", "</md-avatar>$0"],
+    "description": "md-avatar with icon in large size - Vue Material"
+  },
+  "md-avatar as a placeholder": {
+    "prefix": "",
+    "body": [" <md-avatar class=\"md-avatar-icon\">${1:text}</md-avatar>"],
+    "description": ""
+  },
+  // ### BOTTOM BAR
+  "md-bottom-bar component": {
+    "prefix": "mdBottomBar",
+    "body": ["<md-bottom-bar>", "  $1", "</md-bottom-bar>$0"],
+    "description": "md-bottom-bar component - Vue Material"
+  },
+  "md-bottom-bar with Vue router integration": {
+    "prefix": "mdBottomBarRouter",
+    "body": ["<md-bottom-bar md-sync-route>", "  $1", "</md-bottom-bar>$0"],
+    "description": "md-bottom-bar with Vue router integration - Vue Material"
+  },
+  "md-bottom-bar template": {
+    "prefix": "mdBottomBarTemplate",
+    "body": [
+      "<md-bottom-bar md-type=\"shift\">",
+      "  <md-bottom-bar-item id=\"${1:id}\" md-label=\"${2:label}\" md-icon=\"${3:icon}\"></md-bottom-bar-item>",
+      "  <md-bottom-bar-item id=\"${4:id}\" md-label=\"${5:label}\" md-icon=\"${6:icon}\"></md-bottom-bar-item>",
+      "  <md-bottom-bar-item id=\"${7:id}\" md-label=\"${8:label}\" md-icon=\"${9:icon}\"></md-bottom-bar-item>",
+      "  <md-bottom-bar-item id=\"${10:id}\" md-label=\"${11:label}\" md-icon=\"${12:icon}\"></md-bottom-bar-item>",
+      "</md-bottom-bar>$0"
+    ],
+    "description": "md-bottom-bar template - Vue Material"
+  },
+  "md-bottom-bar template with router integration": {
+    "prefix": "mdBottomBarTemplateRouter",
+    "body": [
+      "<md-bottom-bar md-sync-route>>",
+      "  <md-bottom-bar-item to=\"${1:routerLink}\" md-label=\"${2:label}\" md-icon=\"${3:icon}\"></md-bottom-bar-item>",
+      "  <md-bottom-bar-item to=\"${4:routerLink}\" md-label=\"${5:label}\" md-icon=\"${6:icon}\"></md-bottom-bar-item>",
+      "  <md-bottom-bar-item to=\"${7:routerLink}\" md-label=\"${8:label}\" md-icon=\"${9:icon}\"></md-bottom-bar-item>",
+      "  <md-bottom-bar-item to=\"${10:routerLink}\" md-label=\"${11:label}\" md-icon=\"${12:icon}\"></md-bottom-bar-item>",
+      "</md-bottom-bar>$0"
+    ],
+    "description": "md-bottom-bar template with router integration - Vue Material"
+  },
+  "md-bottom-bar-item component": {
+    "prefix": "mdBottomBarItem",
+    "body": ["<md-bottom-bar-item id=\"${1:id}\" md-label=\"${2:label}\" md-icon=\"${3:icon}\"></md-bottom-bar-item>$0"],
+    "description": "md-bottom-bar-item component - Vue Material"
+  },
+  // ### BUTTON
+  // ### CARD
+  "md-card component": {
+    "prefix": "mdCard",
+    "body": [
+      "<md-card>",
+      "  <md-card-header>",
+      "    <div class=\"md-title\">${1:title}</div>",
+      "  </md-card-header>",
+      "  <md-card-content>",
+      "    ${2:content}",
+      "  </md-card-content>",
+      "  <md-card-actions>",
+      "    <md-button>${3:action}</md-button>",
+      "    <md-button>${4:action}</md-button>",
+      "  </md-card-actions>",
+      "</md-card>$0"
+    ],
+    "description": "md-card component - Vue Material"
+  },
+  "md-card with hover effect": {
+    "prefix": "mdCardHover",
+    "body": [
+      "<md-card md-with-hover>",
+      "  <md-ripple>",
+      "    <md-card-header>",
+      "      <div class=\"md-title\">${1:title}</div>",
+      "      <div class=\"md-subheading\">${2:subheading}</div>",
+      "    </md-card-header>",
+      "    <md-card-content>",
+      "      ${3:content}",
+      "    </md-card-content>",
+      "    <md-card-actions>",
+      "      <md-button>${4:action}</md-button>",
+      "      <md-button>${5:action}</md-button>",
+      "    </md-card-actions>",
+      "  </md-ripple>",
+      "</md-card>$0"
+    ],
+    "description": "md-card with hover effect - Vue Material"
+  },
+  "md-card with a media cover": {
+    "prefix": "mdCardMedia",
+    "body": [
+      "<md-card>",
+      "  <md-card-header>",
+      "    <md-card-header-text>",
+      "      <div class=\"md-title\">${1:title}</div>",
+      "      <div class=\"md-subheading\">${2:subheading}</div>",
+      "    </md-card-header-text>",
+      "    <md-card-media ${3:md-medium}>",
+      "      <img src=\"${4:src}\" alt=\"${5:alt}\">",
+      "    </md-card-media>",
+      "  </md-card-header>",
+      "  <md-card-actions>",
+      "    <md-button>${6:action}</md-button>",
+      "    <md-button>${7:action}</md-button>",
+      "  </md-card-actions>",
+      "</md-card>$0"
+    ],
+    "description": "md-card with a media cover - Vue Material"
+  },
+  "md-card background with aspect ratio": {
+    "prefix": "mdCardAspectRatio",
+    "body": [
+      "<md-card>",
+      "  <md-card-media-cover ${1:${2|md-text-scrim,md-solid|}}>",
+      "    <md-card-media md-ratio=\"${3:16:9}\">",
+      "      <img src=\"${4:src}\" alt=\"${5:alt}\">",
+      "    </md-card-media>",
+      "    <md-card-area>",
+      "      <md-card-header>",
+      "        <span class=\"md-title\">${6:title}</span>",
+      "        <span class=\"md-subheading\">${7:subheading}</span>",
+      "      </md-card-header>",
+      "      <md-card-actions>",
+      "        <md-button>${8:action}</md-button>",
+      "        <md-button>${9:action}</md-button>",
+      "      </md-card-actions>",
+      "    </md-card-area>",
+      "  </md-card-media-cover>",
+      "</md-card>$0"
+    ],
+    "description": "md-card background with aspect ratio - Vue Material"
+  },
+  "md-card with themes": {
+    "prefix": "mdCardTheme",
+    "body": [
+      "<md-card class=\"${1:md-primary}\" md-theme=\"${2:theme}\" ${3:md-with-hover}>",
+      "  <md-ripple>",
+      "    <md-card-header>",
+      "      <div class=\"md-title\">${4:title}</div>",
+      "      <div class=\"md-subhead\">${5:subheading}</div>",
+      "    </md-card-header>",
+      "    <md-card-content>",
+      "      ${6:content}",
+      "    </md-card-content>",
+      "  </md-ripple>",
+      "</md-card>$0"
+    ],
+    "description": "md-card with themes - Vue Material"
+  },
+  "md-card with expansion control": {
+    "prefix": "mdCardExpansionControl",
+    "body": [
+      "<md-card>",
+      "  <md-card-media>",
+      "    <img src=\"${1:src}\" alt=\"${2:alt}\">",
+      "  </md-card-media>",
+      "  <md-card-header>",
+      "    <div class=\"md-title\">${3:title}</div>",
+      "    <div class=\"md-subheading\">${4:subtitle}</div>",
+      "  </md-card-header>",
+      "  <md-card-expand>",
+      "    <md-card-actions md-alignment=\"space-between\">",
+      "      <div>",
+      "        <md-button>${5:action}</md-button>",
+      "        <md-button>${6:action}</md-button>",
+      "      </div>",
+      "      <md-card-expand-trigger>",
+      "        <md-button class=\"md-icon-button\">",
+      "          <md-icon>${7:icon}</md-icon>",
+      "        </md-button>",
+      "      </md-card-expand-trigger>",
+      "    </md-card-actions>",
+      "    <md-card-expand-content>",
+      "      <md-card-content>",
+      "        ${8:expand-content}",
+      "      </md-card-content>",
+      "    </md-card-expand-content>",
+      "  </md-card-expand>",
+      "</md-card>$0"
+    ],
+    "description": "md-card with expansion control - Vue Material"
+  },
+  // ### CONTENT
+  "md-content component": {
+    "prefix": "mdContent",
+    "body": ["<md-content class=\"${1:md-primary}\">${2:content-body}</md-content>$0"],
+    "description": "md-content component - Vue Material"
+  },
+  // ### DATEPICKER
+  "md-datepicker component": {
+    "prefix": "mdDatepicker",
+    "body": ["<md-datepicker v-model=\"${1:selectedDate}\" />$0"],
+    "description": "md-datepicker component - Vue Material"
+  },
+  "md-datepicker with label": {
+    "prefix": "mdDatepickerLabel",
+    "body": ["<md-datepicker v-model=\"${1:selectedDate}\">", "  <label>${2:Select date}</label>", "</md-datepicker>$0"],
+    "description": "md-datepicker with label - Vue Material"
+  },
+  "md-datepicker cancel on focus": {
+    "prefix": "mdDatepickerCancelOnFocus",
+    "body": ["<md-datepicker v-model=\"${1:selectedDate}\" :md-open-on-focus=\"false\" />$0"],
+    "description": "md-datepicker cancel on focus - Vue Material"
+  },
+  "md-datepicker with disabled dates": {
+    "prefix": "mdDatepickedDisabledDates",
+    "body": ["<md-datepicker v-model=\"${1:selectedDate}\" :md-disabled-dates=\"${2:disabledDates}\" />$0"],
+    "description": "md-datepicker with disabled dates - Vue Material"
+  },
+  // ###
+  // # KEYWORDS
+  //  ## COLOR RELATED
+  "md-primary color class": {
+    "prefix": "md-primary",
+    "body": ["md-primary$0"],
+    "description": "md-primary color - Vue Material"
+  },
+  "md-accent color class": {
+    "prefix": "md-accent",
+    "body": ["md-accent$0"],
+    "description": "md-accent color - Vue Material"
+  },
+  // ### COMPONENT RELATED
+  // ### AVATAR
+  "md-avatar-icon class": {
+    "prefix": "md-avatar-icon",
+    "body": ["md-avatar-icon$0"],
+    "description": "Creates a avatar that can show a icon - Vue Material"
+  },
+  // ### BOTTOM BAR
+  // ### SIZE REALATED
+  "md-small class": {
+    "prefix": "md-small",
+    "body": ["md-small$0"],
+    "description": "md-small classMakes a small avatar, changing the size of image, icon or text - Vue Material"
+  },
+  "md-large class": {
+    "prefix": "md-large",
+    "body": ["md-large$0"],
+    "description": "Makes a large avatar. Commonly used as the current user avatar inside a left md-drawer - Vue Material"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "vue-material",
+  "displayName": "vue-material-vscode",
+  "author": "abhaywawale",
+  "icon": "img/logo.png",
+  "description": "vue-material vscode extension",
+  "license": "MIT",
+  "version": "0.0.1",
+  "publisher": "abhaywawale",
+  "keywords": ["vue-material", "vue-material snippets", "vuetify autocomplete", "vue-material-vscode"],
+  "engines": {
+    "vscode": "^1.8.0"
+  },
+  "repository": {
+    "url": "https://github.com/abhaywawale/vue-material-vscode"
+  },
+  "homepage": "https://github.com/abhaywawale/vue-material-vscode",
+  "bugs": {
+    "url": "https://github.com/abhaywawale/vue-material-vscode/issues"
+  },
+  "categories": ["Snippets", "Other"],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "jade",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}
