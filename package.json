@@ -1,11 +1,11 @@
 {
   "name": "vue-material",
-  "displayName": "vue-material-vscode",
+  "displayName": "Vue Material",
   "author": "abhaywawale",
   "icon": "img/logo.png",
   "description": "vue-material vscode extension",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "abhaywawale",
   "keywords": ["vue-material", "vue-material snippets", "vuetify autocomplete", "vue-material-vscode"],
   "engines": {
